@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <!-- ENCABEZADO LOGO Y MENÚ -->
+      
+    <header>
+      <div class="ancho">
+        <div class="logo">
+          <a href="index.html"> sos </a>
+        </div>
+
+      <nav>
+        <div class="izquierda">
+          <li><a href="Cómo borrar tu historial">Cómo borrar tu historial</a></li>
+        </div>
+        <div class="derecha">
+          <li><a href="Contactos de emergencia">Contactos de emergencia</a></li>
+        </div>
+      </nav>
+
+
+      </div>   
+  
+    </header>
+
+   <!-- CONTENIDO -->
+      
+    <main>
+      
+        <!--   <div class="contenedorCodificar">
+          <input type="text" name="codificar" id="codificar">
+          <button class="button Codificar"><span>Codificar</span></button>
+        </div>   
+      
+        forma2
+      <div id="contenedorCodificar">
+          <textarea input type="text" id="textoUno" placeholder="|Escribe aquí tu mensaje..."></textarea>
+        </div>
+      
+      -->
+      <button class="button Emergency"><span>!</span></button>
+      
+      <div>
+
+        <div id="contenedorDecodificar" autocomplete="off">
+          <input id="input-original" spellcheck="false" placeholder="|Escribe aquí tu mensaje..." type="text" name="text">
+        </div>
+        <div class="clave">
+          <input id = "clave" type="range" value="14" min="1" max="25" oninput="this.nextElementSibling.value = this.value">
+          <output>14</output>
+        </div>
+
+        <div id="contenedorDescifrado"> 
+          <input type="text"> <!--AQUÍ VA UN CUADRO X CON EL TEXTO RESULTANTE-->
+        </div>
+        
+        <button class="button Return"><span>Volver</span></button>     
+
+    </div>
+           
+      <!-- FORMULARIO DE TEXTO 
+
+        <p>
+          <label>Escribe aquí tu mensaje</label><br>
+          <input type="text" message=" ">
+        </p> 
+
+      BOTONES 2  
+      <button class="button Return"><span>Volver</span></button>
+      <button class="button Emergency"><span>!</span></button>
+      <button class="button Send"><span>Mandar por correo</span></button>
+      <button class="button Copy"><span>Copiar</span></button> -->
+
+      
+      <!--  -->
+      
+    </main>
+
+       
+    <footer>
+      <p>Recuerda que puedes salir de esta página en cualquier momento
+        <br>presionando <strong>Ctrl + W / CMD + W</strong> o presionando el botón de emergencia.
+        <br>No olvides borrar tu historial del navegador.</p>
+    </footer>
+
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
