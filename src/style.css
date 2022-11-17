@@ -12,8 +12,8 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 28px;
     text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    /*background-size: cover;
+    background-repeat: no-repeat;*/
     height: 100%;
 }
 
@@ -103,11 +103,11 @@ nav a {
 }
 
 .logo{
-    width: 30%;
+    /*width: 30%;*/
     margin: auto;
     max-height: 115px;
     padding-top: 0px;
-    
+    display: flex;
     /*background-color: aqua;*/
    
 }
