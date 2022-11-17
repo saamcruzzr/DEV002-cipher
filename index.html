@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <!-- ENCABEZADO LOGO Y MENÚ -->
+    <div class="barra"></div>
+    
+    <header>
+      <!-- <div id="barra"></div> -->
+           
+        <div class="ancho"> 
+
+          <!-- <div class="logo"> 
+            <a href="index.html"> SOS </a>
+          </div> -->
+          
+          <nav class="ancho">
+            
+            <div class="izquierda">
+              <a href="Cómo borrar tu historial">Cómo borrar tu historial</a>
+            </div>
+            <div class="derecha">
+              <a href="Contactos de emergencia">Contactos de emergencia</a>
+            </div>
+            <div class="logo">
+              <a href="index.html">SOS</a>
+            </div>
+            <br>
+          </nav>
+        </div>         
+  
+    </header>
+
+    
+
+   <!-- CONTENIDO -->
+      
+    <main>
+      <br><br><br><br><br>
+      <div class="principal">
+        
+       <h1>Bienvenida a SOS CODE </h1>
+       <br>
+
+       <div id="root">
+         <p> Con esta aplicación web podrás cifrar tus mensajes y descifrarlos en caso de que necesites que tu pareja no se entere,
+          o si eres parte de la red de apoyo de alguien que esté pasando por una situación difícil de Violencia de Género (particularmente
+          Violencia Doméstica), y requieres mandarle un mensaje seguro para evitar ponerte o ponerle en riesgo.<br><br>
+          La sugerencia es que no se conserven los mensajes, en especial los que no estén cifrados, ya que lo primordial es tu bienestar personal.<br><br>
+          Podrás encontrar en la esquina inferior derecha un <span style="text-decoration: underline;">botón de emergencia</span> por si las circunstancias indican que
+          no puedes salir de la página de forma segura. Te redirigirá a una página de venta de ropa para que puedas poner una excusa creíble.
+          <br><br>Independientemente del momento en que abandones la web, recuerda borrar tu historial de navegación.</p>
+          <br>
+          <p>&female;&female;&female;</p>
+          <br>
+          <p>Toma en cuenta que los caracteres especiales como números, letras con acentos y signos no cambian (hasta esta actualización), 
+            por lo que es preferible evitarlos si es un mensaje delicado. Con la barra deslizadora pones la clave con la que se cifrará tu mensaje, 
+            y sólo debes compartirla con la persona a la que envías el mensaje.</p>
+          <br>
+         
+       </div>
+
+        <!-- BOTONES PRINCIPALES 
+        <div class="contenedor-botones">
+          <div class="buttons">
+            <button class="button Code">Codificar</button>
+            <button class="button Decode">Decodificar</button>
+          </div>
+        </div>   -->
+
+      </div>
+      
+      <button type="button" class="buttonEmergency" onclick="window.location.href='https://www.shein.com.mx/';">!</button>
+      
+      
+      
+      <!--CONTENEDORES CIFRADO -->
+
+      <div>
+
+        <div id="contenedorCodificar" autocomplete="off">
+          <input id="input-original" spellcheck="false" placeholder="|Escribe aquí tu mensaje..." type="text" name="text">
+        </div>
+        
+        <div class="clave">
+          <input id = "clave" type="range" value="20" min="1" max="40" oninput="this.nextElementSibling.value = this.value">
+          <output>20</output>
+        </div>
+       
+        <div class="botonesCifrado1">
+          <button id="cipher">Codificar</button>
+          <button id="decipher">Decodificar</button>
+        </div>
+        
+        <div id="contenedorCifrado"> 
+          <input id="texto-cifrado" type="text">
+        </div>
+
+        <!--<div class="botonesCifrado2">
+          // <button class="button Return">Volver</button>
+          <button id="copy">Copiar</button>
+          <button id="send">Enviar por correo</button>
+        </div>
+
+      </div> -->
+      <br><br>
+      <br><br>
+      
+      <!--CONTENEDORES DESCIFRADO 
+      
+      <div>
+  
+        <div id="contenedorDecodificar" autocomplete="off">
+          <input id="input-original2" spellcheck="false" placeholder="|Pega aquí tu mensaje..." type="text" name="text">
+        </div>
+
+        <div class="clave2">
+          <input id = "clave2" type="range" value="20" min="1" max="40" oninput="this.nextElementSibling.value = this.value">
+          <output>20</output>
+        </div>
+
+        <div class="botonesDescifrado1">
+          <button id="decipher">Decodificar</button>
+        </div>
+       
+
+        <div id="contenedorDescifrado"> 
+          <input id="texto-descifrado" type="text">
+        </div>
+
+        <div class="botonesDescifrado2">
+        <button class="button Return">Volver</button>
+        </div>
+
+      </div>
+      -->
+   
+    </main>
+
+       
+    <footer>
+      <p>Recuerda que puedes salir de esta página en cualquier momento presionando <strong>Ctrl + W / CMD + W</strong> o presionando el <strong>botón de emergencia.</strong>
+        <br>No olvides borrar tu historial del navegador.</p>
+    </footer>
+    
+
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
