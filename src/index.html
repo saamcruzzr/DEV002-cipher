@@ -8,64 +8,75 @@
   <body>
     
     <!-- ENCABEZADO LOGO Y MENÚ -->
-    
-    <div id="barra"></div> 
+    <div class="barra"></div>
     
     <header>
-      
-      <div class="ancho">      
-        <div class="logo">
-          <a href="index.html"> sos </a>
-        </div>
-        <nav>
-          <div class="izquierda">
-            <a href="Cómo borrar tu historial">Cómo borrar tu historial</a>
-          </div>
-          <div class="derecha">
-            <a href="Contactos de emergencia">Contactos de emergencia</a>
-          </div>
-        </nav>
-      </div>   
+      <!-- <div id="barra"></div> -->
+           
+        <div class="ancho"> 
+
+          <!-- <div class="logo"> 
+            <a href="index.html"> SOS </a>
+          </div> -->
+          
+          <nav class="ancho">
+            
+            <div class="izquierda">
+              <a href="Cómo borrar tu historial">Cómo borrar tu historial</a>
+            </div>
+            <div class="derecha">
+              <a href="Contactos de emergencia">Contactos de emergencia</a>
+            </div>
+            <div class="logo">
+              <a href="index.html">SOS</a>
+            </div>
+            <br>
+          </nav>
+        </div>         
   
     </header>
+
+    
 
    <!-- CONTENIDO -->
       
     <main>
-     
+      <br><br><br><br><br>
       <div class="principal">
         
        <h1>Bienvenida a SOS CODE </h1>
+       <br>
 
        <div id="root">
-         <p> Con esta aplicación web podrás cifrar tus mensajes y descifrarlos en caso de que necesites que tu pareja no se entere,<br>
-          o si eres parte de la red de apoyo de alguien que esté pasando por una situación dificil de Violencia de Género<br>
-          y requieres mandarle un mensaje seguro para evitar ponerle en riesgo. <br>
-          La sugerencia es que no conserven lo mensajes, en especial los que no estén cifrados.<br>
-          Podrás encontrar en la esquina inferior derecha un botón de emergencia por si las circunstancias indican que <br>
-          no puedes salir de la página de forma segura.<br>
-          Este te redirigirá a una página de fastfashion para que puedas poner una excusa creíble.<br><br>
-          Recuerda, no estás sola.
-          <br><br>
-          En los siguientes botones podrás elegir la opción que requieras.
+         <p> Con esta aplicación web podrás cifrar tus mensajes y descifrarlos en caso de que necesites que tu pareja no se entere,
+          o si eres parte de la red de apoyo de alguien que esté pasando por una situación difícil de Violencia de Género (particularmente
+          Violencia Doméstica), y requieres mandarle un mensaje seguro para evitar ponerte o ponerle en riesgo.<br><br>
+          La sugerencia es que no se conserven los mensajes, en especial los que no estén cifrados, ya que lo primordial es tu bienestar personal.<br><br>
+          Podrás encontrar en la esquina inferior derecha un <span style="text-decoration: underline;">botón de emergencia</span> por si las circunstancias indican que
+          no puedes salir de la página de forma segura. Te redirigirá a una página de venta de ropa para que puedas poner una excusa creíble.
+          <br><br>Independientemente del momento en que abandones la web, recuerda borrar tu historial de navegación.</p>
           <br>
-          
-        </p>
-
+          <p>&female;&female;&female;</p>
+          <br>
+          <p>Toma en cuenta que los caracteres especiales como números, letras con acentos y signos no cambian (hasta esta actualización), 
+            por lo que es preferible evitarlos si es un mensaje delicado. Con la barra deslizadora pones la clave con la que se cifrará tu mensaje, 
+            y sólo debes compartirla con la persona a la que envías el mensaje.</p>
+          <br>
+         
        </div>
 
-         
-        <!-- BOTONES PRINCIPALES -->
+        <!-- BOTONES PRINCIPALES 
         <div class="contenedor-botones">
           <div class="buttons">
             <button class="button Code">Codificar</button>
             <button class="button Decode">Decodificar</button>
           </div>
-        </div>
+        </div>   -->
+
       </div>
       
       <button type="button" class="buttonEmergency" onclick="window.location.href='https://www.shein.com.mx/';">!</button>
-      <br><br> <hr> <br>
+      
       
       
       <!--CONTENEDORES CIFRADO -->
@@ -75,30 +86,30 @@
         <div id="contenedorCodificar" autocomplete="off">
           <input id="input-original" spellcheck="false" placeholder="|Escribe aquí tu mensaje..." type="text" name="text">
         </div>
-
+        
         <div class="clave">
           <input id = "clave" type="range" value="20" min="1" max="40" oninput="this.nextElementSibling.value = this.value">
           <output>20</output>
         </div>
-
+       
         <div class="botonesCifrado1">
           <button id="cipher">Codificar</button>
           <button id="decipher">Decodificar</button>
         </div>
-
+        
         <div id="contenedorCifrado"> 
           <input id="texto-cifrado" type="text">
         </div>
 
-        <div class="botonesCifrado2">
-          <button class="button Return">Volver</button>
-          <button class="button Copy">Copiar</button>
-          <button class="button Send">Enviar por correo</button>
+        <!--<div class="botonesCifrado2">
+          // <button class="button Return">Volver</button>
+          <button id="copy">Copiar</button>
+          <button id="send">Enviar por correo</button>
         </div>
 
-      </div>
-      <br><hr><br>
-      
+      </div> -->
+      <br><br>
+      <br><br>
       
       <!--CONTENEDORES DESCIFRADO 
       
@@ -133,67 +144,12 @@
 
        
     <footer>
-      <p>Recuerda que puedes salir de esta página en cualquier momento
-        <br>presionando <strong>Ctrl + W / CMD + W</strong> o presionando el botón de emergencia.
+      <p>Recuerda que puedes salir de esta página en cualquier momento presionando <strong>Ctrl + W / CMD + W</strong> o presionando el <strong>botón de emergencia.</strong>
         <br>No olvides borrar tu historial del navegador.</p>
     </footer>
+    
 
 
     <script src="index.js" type="module"></script>
   </body>
 </html>
-
-
-
-
-
-
-
-    
-
-
-
-<!-- 
-  BOTON CON DESPLEGABLEE
-Simple pop-up dialog box, containing a form 
-<dialog id="favDialog">
-  <form method="dialog">
-    <section>
-      <p><label for="favAnimal">Favorite animal:</label>
-      <select id="favAnimal">
-        <option></option>
-        <option>Brine shrimp</option>
-        <option>Red panda</option>
-        <option>Spider monkey</option>
-      </select></p>
-    </section>
-    <menu>
-      <button id="cancel" type="reset">Cancel</button>
-      <button type="submit">Confirm</button>
-    </menu>
-  </form>
-</dialog>
-
-<menu>
-  <button id="updateDetails">Update details</button>
-</menu>
-
-<script>
-  (function() {
-    var updateButton = document.getElementById('updateDetails');
-    var cancelButton = document.getElementById('cancel');
-    var favDialog = document.getElementById('favDialog');
-
-    // Update button opens a modal dialog
-    updateButton.addEventListener('click', function() {
-      favDialog.showModal();
-    });
-
-    // Form cancel button closes the dialog box
-    cancelButton.addEventListener('click', function() {
-      favDialog.close();
-    });
-
-  })();
-</script>
--->

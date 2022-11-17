@@ -1,8 +1,15 @@
 
  const cipher = {
- 
+   
   encode:function (offset, string) {
-
+    
+    if (!string) {
+        throw new TypeError("El argumento 'string' no existe") 
+    }
+    if (!offset) {
+        throw new TypeError("El argumento 'offset' no existe") 
+    }
+   
    
     let resultado = "";
     const abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -25,7 +32,14 @@
 
   decode:function (offset, string) {
   
- 
+    if (!string) {
+        throw new TypeError("El argumento 'string' no existe") 
+    }
+    if (!offset) {
+        throw new TypeError("El argumento 'offset' no existe") 
+    }
+   
+    
     let resultado = "";
     const abc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
