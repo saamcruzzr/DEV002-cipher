@@ -108,6 +108,7 @@ nav a {
     max-height: 115px;
     padding-top: 0px;
     display: flex;
+    /*float: center;*/
     /*background-color: aqua;*/
    
 }
@@ -119,7 +120,7 @@ nav a {
     font-weight: 400;
     text-align: center;
     margin: auto;
-    float: center;
+    
     text-decoration-line: none;
     /*background-color: yellow;*/
 }   
