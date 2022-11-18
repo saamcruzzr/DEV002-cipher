@@ -1,45 +1,97 @@
 # PROYECTO: DEV002 - cipher
 
-## Índice
+[TOCM]
 
-* [1. Resumen del proyecto](#1-resumen-del-proyecto)
+### Objetivo General
 
-Crear una aplicación web que servirá para que el usuario
-pueda cifrar y descifrar un texto indicando un desplazamiento específico de
-caracteres (_offset_).
+- Crear una aplicación web, de forma individual, que servirá para que el usuario pueda cifrar y descifrar un texto indicando un desplazamiento específico de caracteres (_offset_).
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso
-(qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. Algunas ideas de
-ejemplo:
+- La temática es libre, aplicable a situaciones de la vida real.
 
-* Crear claves seguras para el email.
-* Encriptar/cifrar una tarjeta de crédito.
-* Herramienta de mensajería interna de una organización de derechos humanos en
-  una zona de conflicto.
-* Mensajería secreta para parejas.
+- La aplicación web interactuará con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript, como tecnologías.
 
-Trabajando de forma individual aprenderás a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
+# Desarrollo del Proyecto
 
+De los proyectos a elegir decidí trabajar con el **Cifrado César.**
 
-* [2. Descripción del proyecto](#2-Descripción-del-proyecto)
+Determiné el tema de mi proyecto 2 veces. El primer tema no terminaba de convencerme ni emocionarme lo suficiente para proyectar una idea concreta, tenía ideas muy dispersas, hasta que tuve un momento de "iluminación" durante el primer día de hacking oficial, y decidí enfocar el proyecto en un tema que conozco y que nos atraviesa a todas, la Violencia de Género. Pensando particularmente en la  ***Violencia Doméstica.***
 
-Elegí uno de los dos proyectos con el que trabajé. Me decidí por el de cifrado cesar.
-Determiné el tema de mi proyecto 2 veces. En la primera no terminaba de convencerme ni emocionarme lo suficiente para proyectar una idea concreta, tenía ideas muy dispersas hasta que tuve un momento de "iluminación" en algún momento del primer día de hacking oficial y decidí enfocar el proyecto en un tema que nos atraviesa a todas, la violencia de género.
+Planteando como primera hipótesis, una situación donde la mujer víctima de violencia quiere huir de su hogar, pero necesita comunicarse con su red de apoyo y hacer un plan en conjunto para llevar a cabo la huida de la forma más segura posible, y/o en dado caso pedir ayuda sin que su abusador se entere.
 
-Como primer punto enfoqué el tema especificamente a las personas que sufren violencia doméstica, para que, hipotéticamente, si esta mujer está planeando huir de su hogar pueda planearlo de manera segura, o en dado caso, pedir ayuda sin que su abusador se entere.
+######  Primeros bosquejos
+
+img
 
 Después de algunos bocetos en papel y pluma, pasé a desarrollar un prototipo en figma, sencillo en blanco y negro con textos falsos.
-*[]()
 
-El segundo prototipo ya a color y con interacción, pero aún con algunos textos falsos.
-*[]()
+Cabe mencionar que era mi primera interacción con el software por lo que demoré un poco en entender las cosas que podía hacer dentro del programa.
+
+######  Prototipo blanco y negro - figma
+
+[B/N](https://www.figma.com/proto/eKPJwxCksMqNQW2Cv0VSr6/PROTOTIPO-BN?page-id=0%3A1&node-id=1%3A3&viewport=102%2C419%2C0.11&scaling=min-zoom)
+
+Para el prototipo en blanco y negro definí algunas características generales de cómo imaginaba el proyecto.
+
+Elección de Fuentes Tipográficas
+- Rubik Maze
+Para imagen (logotipo)
+- Inter
+Para textos en general
+
+######  Prototipo color - figma
+
+[Color](https://www.figma.com/proto/qWGaTRWjfUoZXP18C5hMtK/PROTOTIPO-COLOR?page-id=0%3A1&node-id=1%3A3&viewport=170%2C343%2C0.06&scaling=scale-down&starting-point-node-id=1%3A3 "Figma Color")
+
+El segundo prototipo ya a color y con interacción en los botones, aún con textos falsos, que posteriormente se redactaron.
 
 La idea inicial es que lo primero que aparezca sea una alerta al usuario, recordemos que son víctimas de violencia doméstica, por lo que se advierte que la página puede dejar rastros en el historial, recuerda los números de emergencia e indica cómo salir de la página de ser necesario.
 
-Una vez aceptando la alerta, vez el menú de navegación con dos opciones, redirigirte a los contactos de emergencia y redirigirte a cómo borrar el historial.
+Una vez aceptando la alerta, vez el menú de navegación con dos opciones, redirigirte a los *contactos de emergencia* y redirigirte a *cómo borrar el historial.*
 
 La página principal inicia con una serie de instrucciones para indicar a las usuarias cómo utilizar el sitio, los botones para redirigirte a Cifrar y Descifrar, y el botón rojo de emergencia, el cual pinchandolo te redirige a otra página totalmente diferente, en este caso SHEIN, para que las usuarias en caso de ser descubiertas y no les de tiempo de cerrar la web puedan poner una excusa creíble.
 
+En la opción de cifrar aparece la caja para teclear texto el botón de codificar, después en otra pantalla la caja de texto donde aparece el cifrado y tres opciones de botones: volver, para regresar a la página de inicio; copiar y mandar por correo.
+
+Para la opcion de decifrar, una vez que se pasa por la pantalla para poner el texto, la siguiente solamente muestra el resultado descifrado y un botón de volver, pues tomando en cuenta el contexto, no es conveniente tener un boton de copiar o mandar por correo, considerando que lo que se busca es evitar que cualquier persona pueda leer el mensaje.
+
+Algo que en el prototipo no había considerado era el espacio para asignar una clave, posteriormente en el desarrollo decidí utilizar un input tipo range.
+
+###### Desarrollo web
+
+Lo primero que hice una vez que tuve el prototipo, fue comenzar con el HTML y CSS.
+Apliqué algunas cosas que aprendí en el proyecto pasado de la trivia, y me puse a investigar un poco más, pues por mi inexperiencia no me resultaba lo que quería hacer, como ordenar el header para que quedara alineado con el logo al centro.
+
+Enlace el logo al index para que al darle click se refresque la página. Así mismo las opciones de navegación funcionan, pero no redifigen mas que a un 404.
+
+También investigué e implemente un input de tipo range, al cual logré modificarle la apariencia.
+
+Implementé el hover en los botones, ya tenía un acercamiento por la trivia. Quise agregarle animación pero no me salió como quería, así que decidí prescindir de ella para enfocarme en lo escencial del proyecto. 
+
+Pude aclarar muchas cosas sobre los estilos en CSS, y aprendí que no es necesario poner los atributos 10 veces cuando son iguales, simplemente se llaman en la misma línea con comas. Conocí muchos atributos como float, webkit-appearance, background-image: linear-gradient, entre otros; además de aprender como se llaman de forma más específica ciertas características.
+
+Aprendí como llamar en CSS a class, id y las etiquetas de HTML, y conocí que se pueden poner variables en este.
+
+Aclaré un poco más mis conocimientos sobre HTML semántico y traté de implementarlo lo mejor que pude.
+
+Cree diferentes archivos HTML para cambiar pantallas y repliqué lo necesario.*
+
+Lo primero que declaré en JS fue la alerta de seguridad, investigué sobre cómo ponerla lo más fiel al prototipo, pero al no ser escencial para los requerimientos mínimos de funcionalidad del proyecto, decidí dejarla para después. 
+
+Investigué sobre window location, y traté de implementar un replace en el botón de emergencia, pero no tuve exito en hacerlo funcionar, así que lo cambié por un href.
+
+Ajusté la apariencia de la web, tratando seguir algunos criterios de UX, usando por ejemplo display flex.
+
+Para darle funcionalidad al proyecto investigué sobre addEventListener, getElementById, for, funciones, codigo ASCII, ...
+
+Para tratar de darle claridad a lo que tenía que hacer traté de ponerlo en una oración sin lenguajes de programación. Encontré muchas formas viables para poder resolverlo, sin embargo, tuve complicaciones con el código por lo que tuve que tomar decisiones.
+
+######  Ajuste de expectativas a proyecto funcional entregable
+
+No podía hacer funcionar el código JS, tomé la decisión de dejar en una sola página mi aplicación, pues no encontraba el error ni con ayuda de otra persona.
+
+También en esta toma de decisiones tuve que optar por dejar un solo contenedor para teclear el texto, uno sólo para mostrar el resultado y limitar a dos botones para cifrar y descifrar el mensaje. 
+
+Eso me permitió encontrar el error en el código, se trataba de una letra equivocada en minúscula que debía ser mayúscula. 
+Decidí, por el tiempo, dejarlo así en una sola pantalla. Y continuar con los test unitarios.
+
+Busqué la manera de mantener la escencia del prototipo estéticamente hablando, por lo que investigué sobre z-index y fixed por recomendación de una coach. Implementé el fixed en el header, el botón de emergencia y el footer.
