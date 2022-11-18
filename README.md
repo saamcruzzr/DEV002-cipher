@@ -1,7 +1,5 @@
 # PROYECTO: DEV002 - cipher
 
-[TOCM]
-
 ### Objetivo General
 
 - Crear una aplicación web, de forma individual, que servirá para que el usuario pueda cifrar y descifrar un texto indicando un desplazamiento específico de caracteres (_offset_).
@@ -18,7 +16,7 @@ Determiné el tema de mi proyecto 2 veces. El primer tema no terminaba de conven
 
 Planteando como primera hipótesis, una situación donde la mujer víctima de violencia quiere huir de su hogar, pero necesita comunicarse con su red de apoyo y hacer un plan en conjunto para llevar a cabo la huida de la forma más segura posible, y/o en dado caso pedir ayuda sin que su abusador se entere.
 
-######  Primeros bosquejos
+#####  Primeros bosquejos
 
 ![](https://github.com/saamcruzzr/DEV002-cipher/blob/main/src/img%20readme/inicial.jpeg "Bosquejos")
 
@@ -26,13 +24,12 @@ Después de algunos bocetos en papel y pluma, pasé a desarrollar un prototipo e
 
 Cabe mencionar que era mi primera interacción con el software por lo que demoré un poco en entender las cosas que podía hacer dentro del programa.
 
-######  Prototipo blanco y negro - figma
+#####  Prototipo blanco y negro - figma
 
 [B/N](https://www.figma.com/proto/eKPJwxCksMqNQW2Cv0VSr6/PROTOTIPO-BN?page-id=0%3A1&node-id=1%3A3&viewport=102%2C419%2C0.11&scaling=min-zoom)
 ![](https://github.com/saamcruzzr/DEV002-cipher/blob/main/src/img%20readme/PROTOTIPO-BN/PROTOTIPO%20BN_pages-to-jpg-0002.jpg)
 
 Para el prototipo en blanco y negro definí algunas características generales de cómo imaginaba el proyecto y el nombre.
-![](https://github.com/saamcruzzr/DEV002-cipher/blob/main/src/img%20readme/SOS_imagen.png)
 
 Elección de Fuentes Tipográficas
 - Rubik Maze
@@ -41,7 +38,7 @@ Para imagen (logotipo)
 - Inter
 Para textos en general
 ![](https://github.com/saamcruzzr/DEV002-cipher/blob/main/src/img%20readme/inter.jpg)
-######  Prototipo color - figma
+#####  Prototipo color - figma
 
 [Color](https://www.figma.com/proto/qWGaTRWjfUoZXP18C5hMtK/PROTOTIPO-COLOR?page-id=0%3A1&node-id=1%3A3&viewport=170%2C343%2C0.06&scaling=scale-down&starting-point-node-id=1%3A3 "Figma Color")
 ![](https://github.com/saamcruzzr/DEV002-cipher/blob/main/src/img%20readme/PROTOTIPO-COLOR/PROTOTIPO%20COLOR_pages-to-jpg-0002.jpg)
@@ -60,7 +57,7 @@ Para la opcion de decifrar, una vez que se pasa por la pantalla para poner el te
 
 Algo que en el prototipo no había considerado era el espacio para asignar una clave, posteriormente en el desarrollo decidí utilizar un input tipo range.
 
-###### Desarrollo web
+##### Desarrollo web
 
 Lo primero que hice una vez que tuve el prototipo, fue comenzar con el HTML y CSS.
 Apliqué algunas cosas que aprendí en el proyecto pasado de la trivia, y me puse a investigar un poco más, pues por mi inexperiencia no me resultaba lo que quería hacer, como ordenar el header para que quedara alineado con el logo al centro.
@@ -89,7 +86,7 @@ Para darle funcionalidad al proyecto investigué sobre addEventListener, getElem
 
 Para tratar de darle claridad a lo que tenía que hacer traté de ponerlo en una oración sin lenguajes de programación. Encontré muchas formas viables para poder resolverlo, sin embargo, tuve complicaciones con el código por lo que tuve que tomar decisiones.
 
-######  Ajuste de expectativas a proyecto funcional entregable
+#####  Ajuste de expectativas a proyecto funcional entregable
 
 No podía hacer funcionar el código JS, tomé la decisión de dejar en una sola página mi aplicación, pues no encontraba el error ni con ayuda de otra persona.
 
@@ -100,7 +97,7 @@ Decidí, por el tiempo, dejarlo así en una sola pantalla. Y continuar con los t
 
 Busqué la manera de mantener la escencia del prototipo estéticamente hablando, por lo que investigué sobre z-index y fixed por recomendación de una coach. Implementé el fixed en el header, el botón de emergencia y el footer.
 
-###### Cumplimiento de requerimientos mínimos
+##### Cumplimiento de requerimientos mínimos
 
 - Usa VanillaJS.
 - Implementa `cipher.encode`.
