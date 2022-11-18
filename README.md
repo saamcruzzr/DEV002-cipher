@@ -29,18 +29,22 @@ Cabe mencionar que era mi primera interacción con el software por lo que demor�
 ######  Prototipo blanco y negro - figma
 
 [B/N](https://www.figma.com/proto/eKPJwxCksMqNQW2Cv0VSr6/PROTOTIPO-BN?page-id=0%3A1&node-id=1%3A3&viewport=102%2C419%2C0.11&scaling=min-zoom)
+![](https://github.com/saamcruzzr/DEV002-cipher/blob/main/src/img%20readme/PROTOTIPO-BN/PROTOTIPO%20BN_pages-to-jpg-0002.jpg)
 
-Para el prototipo en blanco y negro definí algunas características generales de cómo imaginaba el proyecto.
+Para el prototipo en blanco y negro definí algunas características generales de cómo imaginaba el proyecto y el nombre.
+![](https://github.com/saamcruzzr/DEV002-cipher/blob/main/src/img%20readme/SOS_imagen.png)
 
 Elección de Fuentes Tipográficas
 - Rubik Maze
 Para imagen (logotipo)
+![](https://github.com/saamcruzzr/DEV002-cipher/blob/main/src/img%20readme/rubick-maze.jpg)
 - Inter
 Para textos en general
-
+![](https://github.com/saamcruzzr/DEV002-cipher/blob/main/src/img%20readme/inter.jpg)
 ######  Prototipo color - figma
 
 [Color](https://www.figma.com/proto/qWGaTRWjfUoZXP18C5hMtK/PROTOTIPO-COLOR?page-id=0%3A1&node-id=1%3A3&viewport=170%2C343%2C0.06&scaling=scale-down&starting-point-node-id=1%3A3 "Figma Color")
+![](https://github.com/saamcruzzr/DEV002-cipher/blob/main/src/img%20readme/PROTOTIPO-COLOR/PROTOTIPO%20COLOR_pages-to-jpg-0002.jpg)
 
 El segundo prototipo ya a color y con interacción en los botones, aún con textos falsos, que posteriormente se redactaron.
 
