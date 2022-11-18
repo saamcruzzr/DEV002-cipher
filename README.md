@@ -20,7 +20,7 @@ Planteando como primera hipótesis, una situación donde la mujer víctima de vi
 
 ######  Primeros bosquejos
 
-img
+[![Bosquejos](q "Bosquejos")](https://github.com/saamcruzzr/DEV002-cipher/blob/main/src/img%20readme/inicial.jpeg "Bosquejos")
 
 Después de algunos bocetos en papel y pluma, pasé a desarrollar un prototipo en figma, sencillo en blanco y negro con textos falsos.
 
